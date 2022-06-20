@@ -1,10 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from '../../logo.svg';
 import './App.css';
 import { Route } from 'react-router-dom';
+import { Calender } from '../calender/calender';
 
-function App() {
-    return (
+const App = () => (
+    <div>
+        <Calender />
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
@@ -21,7 +23,7 @@ function App() {
                 </a>
             </header>
         </div>
-    );
-}
+    </div>
+);
 
 export default App;
